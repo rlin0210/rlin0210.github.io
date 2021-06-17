@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>
+            Richard's Website
+        </title>
+    </head>
+
+
+    <script src="main.js">
+        window.onscroll = function() {scrollFuntion()};
+
+        function scrollFunction() {
+            document.getElementById("header").style.top="0";
+            console.log("execute");
+        }
+    </script>
+
+    <body>
+        <header id="header">
+            <div id="name">
+                Richard Lin
+            </div>
+
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a class="link" onclick="jumpTo('homeJ')">
+                            Home
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a class="link" onclick="jumpTo('projectJ')">
+                            Project
+                        </a>
+                    </li>
+    
+                    <li>
+                        <a class="link" onclick="jumpTo('aboutJ')">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="link" onclick="jumpTo('connectJ')">
+                            Connect
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+        </header>
+        
+        <div>
+            <div class="content displayOne" id="beginning">
+                <div id="homeJ">
+                    <h1 class="heading">
+                        Home
+                    </h1>
+                    <p class="text" id="home">
+                        I am an incoming sophomore at the University of California, Berkeley majoring in
+                        EECS and Economics. 
+                        <br><br>
+                        My interests lie in software engineering, specifically front-end and web development.
+                        <br><br>
+                        I am currently seeking internships or projects to join.
+                    </p>
+                </div>
+            </div>
+
+            <div class="content displayTwo">
+                <div>
+                    <h1 class="heading" id="projectJ">
+                        Projects
+                    </h1>
+                    <ul id="project">
+                        <li>
+                            <h2 class="projectTitle">
+                                Gitlet
+                            </h2>
+                            <p class="text" id="projectDescription">
+                                I created a version-control file system using Java. 
+                                This system was able to keep different copies of files and
+                                merge groups of files together when needed.
+                                Here is a 
+                                <a href="https://sp21.datastructur.es/materials/proj/proj2/proj2" class="bodyLinks">
+                                    link
+                                </a>
+                                to the specs of my project. 
+                            </p>
+                        </li>
+                        <li>
+                            <h2 class="projectTitle">
+                                Build Your Own World
+                            </h2>
+                            <p class="text" id="projectDescription">
+                                I created a 2D tile-based world exploration engine that generates a 
+                                unique random world based on user input. 
+                                The world can be saved and loaded and also has a GUI.
+                                Here is a video demonstrating its functionality:
+                                <br>
+                                <video height="240" controls id=video>
+                                    <source src="byow.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content displayOne">
+                <div>
+                    <h1 class="heading" id="aboutJ">
+                        About
+                    </h1>
+                    <div>
+                        <p class="text" id="about">
+                            Hello! My name is Richard Lin and I am from Minnesota but recently moved to California for college.
+                            <br><br>
+                            I am involved in a variety of clubs on campus: 
+                            ASUC Office of Senator Romo, Berkeley Chinese Alumni International Association, and Tau Kappa Epsilon.
+                            <br><br>
+                            In my free time you can usually find me trying new foods around the Bay Area(I love KBBQ),
+                            exploring SF, playing sports with my friends(my favorite being soccer), 
+                            watching live sports and Netflix shows on TV, or working out.
+                            <br><br>
+                            Feel free to reach out to me! My resume and contact information can be found below:
+                        </p>
+
+                        <a href="https://drive.google.com/file/d/13bW_2h8xfI_DfIp_R-r1uTVjn2U0EZUh/view?usp=sharing" class="bodyLinks" id="resume">
+                            Richard Lin's 1 page resume
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content displayTwo">
+                <div id="connectJ">
+                    <h1 class="heading">
+                        Connect
+                    </h1>
+                    <div id="connect">
+                        <a href="https://github.com/rlin0210" class="logos">
+                            <img src="github1.png" height="50" width="50" alt=github>
+                        </a>
+                        <a href="mailto:rlin24@berkeley.edu" class="logos">
+                            <img src="gmail.png" height="50" width="50" alt=gmail>
+                        </a>
+                        <a href="https://www.linkedin.com/in/linrichard02/" class="logos">
+                            <img src="linkedin.png" height="50" width="50" alt=linkedin>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </body>
+</html>
+
+<!-- 
+The <!DOCTYPE html> declaration defines that this document is an HTML5 document
+The <html> element is the root element of an HTML page
+The <head> element contains meta information about the HTML page
+The <title> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)
+The <body> element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
+The <h1> element defines a large heading
+The <p> element defines a paragraph
+The <br> element is a line break
+The <div> element divides items into containers 
+
+The <header> element represents a container for introductory content or a set of navigational links.
+The <nav> tag defines a set of navigation links.
+The <a> tag defines a hyperlink, which is used to link from one page to another.
+The most important attribute of the <a> element is the href attribute, which indicates the link's destination.
+
+The <ul> tag defines an unordered (bulleted) list.
+The <ol> tag defines an ordered list. An ordered list can be numerical or alphabetical.
+The <li> tag defines a list item.
+The <li> tag is used inside ordered lists(<ol>) and unordered lists (<ul>).
+-->
